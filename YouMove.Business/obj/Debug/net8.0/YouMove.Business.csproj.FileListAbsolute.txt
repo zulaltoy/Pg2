@@ -1,0 +1,15 @@
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.csproj.AssemblyReference.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.AssemblyInfoInputs.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.AssemblyInfo.cs
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.csproj.CoreCompileInputs.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\bin\Debug\net8.0\YouMove.Business.deps.json
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\bin\Debug\net8.0\YouMove.Business.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\bin\Debug\net8.0\YouMove.Business.pdb
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\bin\Debug\net8.0\YouMove.Data.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\bin\Debug\net8.0\YouMove.Data.pdb
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove..2DF80FB8.Up2Date
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\refint\YouMove.Business.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\YouMove.Business.pdb
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Business\obj\Debug\net8.0\ref\YouMove.Business.dll

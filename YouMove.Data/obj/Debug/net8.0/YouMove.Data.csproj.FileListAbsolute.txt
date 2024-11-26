@@ -1,0 +1,14 @@
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.AssemblyInfoInputs.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.AssemblyInfo.cs
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.csproj.CoreCompileInputs.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\bin\Debug\net8.0\YouMove.Data.deps.json
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\bin\Debug\net8.0\YouMove.Data.runtimeconfig.json
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\bin\Debug\net8.0\YouMove.Data.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\bin\Debug\net8.0\YouMove.Data.pdb
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.csproj.AssemblyReference.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\refint\YouMove.Data.dll
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.pdb
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\YouMove.Data.genruntimeconfig.cache
+C:\Users\Zulal Toy\source\repos\YouMoveApp\YouMove.Data\obj\Debug\net8.0\ref\YouMove.Data.dll
