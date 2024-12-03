@@ -16,4 +16,6 @@ public partial class Program
     public int MaxMembers { get; set; }
 
     public virtual ICollection<Member> Members { get; set; } = new List<Member>();
+
+    public virtual ICollection<ProgramMember> ProgramMembers { get; set; } = new List<ProgramMember>();
 }

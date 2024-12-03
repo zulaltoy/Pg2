@@ -18,8 +18,9 @@ namespace YouMove.Data {
 
 
             builder.Services.AddControllers().AddXmlDataContractSerializerFormatters();
-            builder .Services.AddSingleton<IEquipmentManager, EquipmentManager>();
-            builder.Services.AddSingleton<IMemberManager, MemberManager>();
+            builder .Services.AddScoped<IEquipmentManager, EquipmentManager>();
+            builder.Services.AddScoped<IMemberManager, MemberManager>();
+            builder.Services.AddScoped<IProgramManager, ProgramManager>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

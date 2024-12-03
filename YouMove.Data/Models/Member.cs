@@ -27,4 +27,6 @@ public partial class Member {
     public virtual ICollection<RunningsessionMain> RunningsessionMains { get; set; } = new List<RunningsessionMain>();
 
     public virtual ICollection<Program> ProgramCodes { get; set; } = new List<Program>();
+
+    public virtual ICollection<ProgramMember> ProgramMembers { get; set; }= new List<ProgramMember>();
 }

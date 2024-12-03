@@ -15,6 +15,7 @@ public partial class GymTestContext : DbContext
         : base(options)
     {
     }
+    public virtual DbSet<ProgramMember> ProgramMembers { get; set; }
 
     public virtual DbSet<Cyclingsession> Cyclingsessions { get; set; }
 
@@ -230,6 +231,18 @@ public partial class GymTestContext : DbContext
                 .HasMaxLength(20)
                 .HasColumnName("part_of_day");
             entity.Property(e => e.StartTime).HasColumnName("start_time");
+        });
+        modelBuilder.Entity<ProgramMember>(entity => {
+            entity.HasKey(pm => new { pm.MemberId, pm.ProgramCode });
+
+            entity.HasOne(pm => pm.Member)
+            .WithMany(m => m.ProgramMembers)
+            .HasForeignKey(pm => pm.MemberId);
+
+            entity.HasOne(pm => pm.Program)
+           .WithMany(p => p.ProgramMembers)
+           .HasForeignKey(pm => pm.ProgramCode);
+
         });
 
         OnModelCreatingPartial(modelBuilder);

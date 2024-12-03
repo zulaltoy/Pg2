@@ -36,9 +36,10 @@ namespace YouMove.Business.Managers {
         public bool UpdateMember(int id, Member member) {
 
             var existingMember = _context.Members.FirstOrDefault(m => m.MemberId == id);
-            if (string.IsNullOrEmpty(member.FirstName) || string.IsNullOrEmpty(member.LastName) ||
-               string.IsNullOrEmpty(member.Address) || member.Birthday == default(DateOnly) ||
-               string.IsNullOrEmpty(member.Membertype) || string.IsNullOrEmpty(member.Email)) return false;
+            if (string.IsNullOrEmpty(member.FirstName) && string.IsNullOrEmpty(member.LastName) &&
+               string.IsNullOrEmpty(member.Address) && member.Birthday == default(DateOnly) &&
+               string.IsNullOrEmpty(member.Membertype) && string.IsNullOrEmpty(member.Email)) return false;
+
             if (existingMember == null) return false;
 
             existingMember.FirstName = member.FirstName;
