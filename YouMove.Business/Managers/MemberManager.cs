@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using YouMove.Business.Interfaces;
 using YouMove.Data.Context;
 using YouMove.Data.Models;
+using YouMove.Business.Models;
+
 
 namespace YouMove.Business.Managers {
     public class MemberManager :IMemberManager{
@@ -15,12 +17,29 @@ namespace YouMove.Business.Managers {
             _context = context;
         }
 
-        public IEnumerable<Member> GetAllMembers() {
-            return _context.Members.ToList();
+        public IEnumerable<MemberDto> GetAllMembers() {
+            return _context.Members
+             .Select(p => new MemberDto {
+                 FirstName = p.FirstName,
+                 LastName = p.LastName,
+                 Email = p.Email,
+                 Address = p.Address,
+                 Birthday = p.Birthday,
+                 Interests = p.Interests,
+             }).ToList();
         }
 
         public Member GetMemberById(int id) {
-            return _context.Members.FirstOrDefault(m => m.MemberId == id);
+            var Member = _context.Members.FirstOrDefault(m => m.MemberId == id);
+            if (Member == null) return null;
+            //return new MemberDto {
+            //    FirstName = Member.FirstName,
+            //    LastName = Member.LastName,
+            //    Email = Member.Email,
+            //    Address = Member.Address,
+            //    Birthday = Member.Birthday,
+            //    Interests = Member.Interests,
+            //};
         }
         public bool AddMember(Member member) {
             if (string.IsNullOrEmpty(member.FirstName) || string.IsNullOrEmpty(member.LastName) ||

@@ -15,6 +15,9 @@ namespace YouMove.Data.Repositories {
         public ProgramRepository(GymTestContext context) {
             _context = context;
         }
+        public IEnumerable<Program> GetAllPrograms() {
+            return _context.Programs.ToList();
+        }
         public Program GetProgramByProgramCode(string ProgramCode) {
            return _context.Programs.FirstOrDefault(p => p.ProgramCode == ProgramCode);
 

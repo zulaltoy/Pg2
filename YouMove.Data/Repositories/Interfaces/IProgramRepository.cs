@@ -9,6 +9,7 @@ namespace YouMove.Data.Repositories.Interfaces {
     public interface IProgramRepository {
         bool AddProgram(Program program);
         bool UpdateProgram(string programCode, Program program);
+        IEnumerable<Program> GetAllPrograms();
         Program GetProgramByProgramCode(string ProgramCode);
     }
 }

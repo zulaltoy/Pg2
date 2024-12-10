@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace YouMove.Data.Repositories.Interfaces {
-    public interface IProgramMemberRepository {
+namespace YouMove.Business.Models {
+    public class EquipmetDto {
+        public string DeviceType { get; set; } = null!;
     }
 }

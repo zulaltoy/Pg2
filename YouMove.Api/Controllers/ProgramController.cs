@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using YouMove.Data.Models;
+using YouMove.Business.Models;
 using YouMove.Business.Managers;
 using YouMove.Business.Interfaces;
 
@@ -13,8 +13,14 @@ namespace YouMove.Api.Controllers {
         public ProgramController(IProgramManager programManager) {
             _programManager = programManager;
         }
+        [HttpGet]
+        public ActionResult<ProgramDto> GetAllPrograms() {
+            var program = _programManager.GetAllPrograms();
+            
+            return Ok(program);
+        }
         [HttpGet("{programCode}")]
-        public ActionResult<Program> GetProgramByProgramCode(string programCode) {
+        public ActionResult<ProgramDto> GetProgramByProgramCode(string programCode) {
             var program = _programManager.GetProgramByProgramCode(programCode);
             if (program == null) {
                 return NotFound();
@@ -22,14 +28,14 @@ namespace YouMove.Api.Controllers {
             return Ok(program);
         }
         [HttpPost]
-        public ActionResult<Program> AddProgram(Program program) {
+        public ActionResult<ProgramDto> AddProgram(ProgramDto program) {
             if (_programManager.AddProgram(program)) {
                 return CreatedAtAction(nameof(GetProgramByProgramCode), new { programCode = program.ProgramCode }, program);
             }
             return BadRequest("A program with this name already exists.");
         }
         [HttpPut("{programCode}")]
-        public IActionResult UpdateProgram(string programCode, Program program) {
+        public IActionResult UpdateProgram(string programCode, ProgramDto program) {
             if (!_programManager.UpdateProgram(programCode, program)) {
                 return NotFound();
             }
